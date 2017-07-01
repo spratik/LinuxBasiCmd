@@ -1,0 +1,40 @@
+ls -l // list of all
+ls -li // i for node number
+ls -lh // h for human readable size
+ls -R // for recursive all file print
+ls -a // all show including hidden file
+ls -v // sort listed file
+
+bs // calculater
+bc >  scale = 2 //  for floating point takes upto 2 digit
+
+passwd -> change password
+
+date -> data
+
+cal -> calender
+
+echo *.txt // show all file which have extension like .txt
+
+whoami -> current userName
+
+tty // which terminal are u currently working on
+
+stty // To set the terminal
+
+
+uname -a // for all option
+uname -r // release version of os
+uname -s // operating system
+uname -n // name of plateform
+
+ls xyz.txt && pwd /// && means if one fail then other also fail
+ls xyz.txt || pwd /// || means if anyone true 
+ls | tee a.txt /// tee cmd will print list of file and will print also in terminal
+
+cat 1.txt 2.txt /// append 2.txt data to 1.txt data
+cat -v unicode.txt /// nonprintable charactor -->use ^ and M- notation, except for LFD and TAB
+cat -e 1.txt ///  display $ at end of each line
+cat -t 1.txt /// display TAB characters as ^I
+
+
