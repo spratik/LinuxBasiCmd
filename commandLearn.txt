@@ -1,4 +1,4 @@
-ls -l // list of all
+﻿ls -l // list of all
 ls -li // i for node number
 ls -lh // h for human readable size
 ls -R // for recursive all file print
@@ -36,5 +36,103 @@ cat 1.txt 2.txt /// append 2.txt data to 1.txt data
 cat -v unicode.txt /// nonprintable charactor -->use ^ and M- notation, except for LFD and TAB
 cat -e 1.txt ///  display $ at end of each line
 cat -t 1.txt /// display TAB characters as ^I
+cat -n sample.file /// show number of line
+
+
+-->head -2 file1 file2 // print specified line in output buffer 
+o/p ::
+==> file1 <==
+pratik
+solanki
+==> file2 <==
+akash
+Hirakki
+
+---> tail -2 file /// tail cmd print last secified line opposite to the head
+
+--> combine head and tail
+file1 contain following data
+cat -n file
+	 1	pratik
+     2	solanki12345
+     3	789456
+     4	777
+     5	+9997
+
+
+head -4 file1 | tail -2
+
+789456
+777
+
+
+----> cut ==> cut command is useful for cut particular colum in file or list of file
+ex --> ls -l | cut -c1,1-9, 50-60 //  it will cut only 1 - 9 cloum from list of file
+
+fileName : field
+contain :: // each word separate by tab  
+pratik	solanki	harish
+akash	123	456
+pratik	789	101112
+
+
+
+cut -f1 field // if delimeter is not specified then by default it will take tab 
+			  // here -f stand for field and 1 stand for first colum
+			  // so one tab take as one colum
+o/p :
+pratik
+akash
+pratik
+
+cut -f1,2 field /// two colum show
+
+pratik	solanki
+akash	123
+pratik	789
+
+
+fileName :: field1
+conatain ::
+pratik/solanki/harish
+akash/hirraki/123
+gangu/56/89
+
+
+cut -f3 -d"/" field1 /// here f3 meas third colum and delimeter is /
+harish
+123
+89
+
+
+NOTE :: the cut command is similar to the head and tail. 
+the cut cmd cut files from verticale(colum vise) where head and tail cmd cut from horizontal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
