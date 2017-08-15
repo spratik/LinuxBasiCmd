@@ -110,7 +110,18 @@ the cut cmd cut files from verticale(colum vise) where head and tail cmd cut fro
 
 
 
+nice & renice ::
+->both are useful for schdule the process. range is between -20 to 19. 
+->if you schedule the process then that process use more CPU usage then other process
+->run a program with modified scheduling priority
 
+sudo nice --20 ./a.out & (& run in background)
+
+change nice value 
+
+sudo renice -10 ./a.out & --> change schedule from -20 to -10
+
+ps -al //using this cmd we can see priority and nice value
 
 
 
